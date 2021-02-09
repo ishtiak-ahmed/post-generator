@@ -5,7 +5,7 @@ function generateContent() {
 
     <br>
     <br>
-    When downloading the <strong>${model}</strong> Flash File software from our site, you must verify which modem and which brand of your mobile. Because it turned out that you were looking for "Samsung Flash File or Oppo Flash File" software but the page you came across is "Huawei Flash File" software so you may be a victim of harassment. 
+    When downloading the <strong>${model}</strong> Flash File software from our site, you must verify your device model and brand. Because it turned out that you were looking for "Samsung Flash File or Oppo Flash File" software but the page you came across is "Huawei Flash File" software so you may be a victim of harassment. 
     So, I would request you to make sure that the mobile flash file software that you have come to search for matches. If there is no match, you can search and download your mobile Flash file software in the "Search" option from the navigation bar at the top of our site.`
 
     document.getElementById('result').innerHTML = postModel;
