@@ -1,5 +1,6 @@
 function generateContent() {
-    const model = document.getElementById('phoneModel').value;
+    const text = (document.getElementById('phoneModel').value);
+    const model = text.toUpperCase()
     const postModel = `Download <strong>${model}</strong> Flash File SC6531E Tested (Stock Official Rom). I'm sure you were looking for a <strong>${model}</strong> Flash File software. At any one time you have come to our bdtechpoint.com site to search for your <strong>${model}</strong> Flash File software. Many thanks and best wishes to you for visiting our site. If you have come to our site for this <strong>${model}</strong> Flash File software. Then, we'll assume you've chosen the right software site. Because we always upload original and official flash file software on our site. We never upload any bad Flash file software to our site. We never worry about anyone being harassed for downloading files from our site. You can download the mobile flash file from our site without any worries.
 
     <br>
@@ -13,15 +14,11 @@ function generateContent() {
 
 
 function copyPost() {
-    console.log('copying text')
-    let copyText = document.getElementById("result");
-    // copyText.select();
-    // copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-    /* Copy the text inside the text field */
+    var copyText = document.getElementById("result").innerText;
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
+    alert("Copied the text: " + copyText.value);
 
-    /* Alert the copied text */
-    // alert("Copied the text: " + copyText.value);
     console.log(copyText.value)
 } 
