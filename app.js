@@ -12,13 +12,18 @@ function generateContent() {
 }
 
 
+const copyToClipboard = () => {
+    const postContent = document.getElementById('result').innerText;
+    const el = document.createElement('textarea');
+    el.value = postContent;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+};
 
-function copyPost() {
-    var copyText = document.getElementById("result").innerText;
-    copyText.select();
-    copyText.setSelectionRange(0, 99999)
-    document.execCommand("copy");
-    alert("Copied the text: " + copyText.value);
-
-    console.log(copyText.value)
-} 
+window.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+        generateContent()
+    }
+})
