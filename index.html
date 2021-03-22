@@ -65,14 +65,19 @@
     <section>
       <h2>Generate Content For Your Post</h2>
       <div class="search-area">
-        <input type="text" id="phoneModel" placeholder="Enter Device Model" />
-        <button onclick="generateContent()">Generate Content</button>
+        <input
+          required
+          type="text"
+          id="phoneModel"
+          placeholder="Enter Device Model"
+        />
+        <button onclick="postGenerator()">Generate Content</button>
       </div>
       <div id="resultArea">
         <button onclick="copyToClipboard()">Copy Content</button>
         <p id="result"></p>
       </div>
     </section>
-    <script src="app.js"></script>
+    <script src="post.js"></script>
   </body>
 </html>
