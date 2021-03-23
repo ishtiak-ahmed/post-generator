@@ -1,6 +1,5 @@
 const postGenerator = () => {
-    const text = (document.getElementById('phoneModel').value);
-    const model = text.toUpperCase()
+    const model = (document.getElementById('phoneModel').value);
     console.log(model)
     const genPost =
         `Hello visitors, Are you searching for <strong>${model}</strong> flash file without password, Stock firmware, flash tools or stock official rom? Then Bd Tech Point is the right place for you. <strong>${model}</strong> flash file and stock official rom are available here. Also check your mobile number before download. So why do you late? Let's download flash file and flash tools. Bd Tech Point is a mobile flash file store room. Many many thanks and best wishes to you for visiting our website.
